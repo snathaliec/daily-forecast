@@ -6,17 +6,17 @@ const thoughts = [
     "Positive thinking will let you do everything better than negative thinking will. – Zig Ziglar",
     "Everyone wants happiness, no one wants pain, but you can’t make a rainbow without a little rain. –  Zion Lee"
 ];
-const accessories = ["Jacket", "Smile", "Sunglasses", "Shoes", "Water", "Snacks", "Keys"];
+const accessories = ["jacket", "smile", "sunglasses", "shoes", "water", "snacks", "keys"];
 
-const randomMood = moods[0];
+const randomMood = moods[Math.floor(Math.random() * moods.length)];
 const randomThought = thoughts[Math.floor(Math.random() * thoughts.length)];
-const randomAccessory = accessories[0];
+const randomAccessory = accessories[Math.floor(Math.random() * accessories.length)];
 
 const newForecast = () => {
     console.log ("Today's Forecast");
     console.log ("Mood: " + randomMood);
     console.log ("Thought: " + randomThought);
-    console.log ("Don't forget: your " + randomAccessory);
+    console.log ("Don't forget: Your " + randomAccessory);
 };
 
 newForecast();
