@@ -1,4 +1,3 @@
-console.log("Is it working?");
 const moods = ["sunny", "cloudy", "windy", "rainy", "stormy"];
 const thoughts = [
     "You have to dream before your dreams can come true. – A.P.J Abdul Kalam", 
@@ -8,3 +7,15 @@ const thoughts = [
     "Everyone wants happiness, no one wants pain, but you can’t make a rainbow without a little rain. –  Zion Lee"
 ];
 const accessories = ["Jacket", "Smile", "Sunglasses", "Shoes", "Water", "Snacks", "Keys"];
+
+console.log(moods.length + " thoughts: " + thoughts[0]);
+const randomThought = thoughts[0];
+const randomMood = moods[0];
+const randomAccessory = accessories[0];
+
+const newForecast = () => {
+    console.log ("Today's Forecast");
+    console.log ("Mood: " + randomMood);
+    console.log ("Thought: " + randomThought);
+    console.log ("Don't forget: your " + randomAccessory);
+}
