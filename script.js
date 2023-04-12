@@ -8,9 +8,8 @@ const thoughts = [
 ];
 const accessories = ["Jacket", "Smile", "Sunglasses", "Shoes", "Water", "Snacks", "Keys"];
 
-console.log(moods.length + " thoughts: " + thoughts[0]);
-const randomThought = thoughts[0];
 const randomMood = moods[0];
+const randomThought = thoughts[Math.floor(Math.random() * thoughts.length)];
 const randomAccessory = accessories[0];
 
 const newForecast = () => {
@@ -18,4 +17,6 @@ const newForecast = () => {
     console.log ("Mood: " + randomMood);
     console.log ("Thought: " + randomThought);
     console.log ("Don't forget: your " + randomAccessory);
-}
+};
+
+newForecast();
